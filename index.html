@@ -6,6 +6,8 @@
   <title>Uri Brodsky - Software Engineering Manager & Head of Backend Guild Head @ Riskified</title>
   <!-- Add Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <style>
     /* Reset & Basic Styles */
     * {
@@ -19,7 +21,7 @@
       color: #333;
       background: #f9f9f9;
       overflow-x: hidden;
-    }
+    }  
     
     a {
       text-decoration: none;
@@ -352,8 +354,8 @@
         <a href="https://www.linkedin.com/in/uri-brodsky-78438932" target="_blank" title="LinkedIn Profile">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/uribro" target="_blank" title="GitHub Profile">
-          <i class="fab fa-github"></i>
+        <a href="mailto:uri.brodsky@gmail.com" title="Email Me">
+          <i class="fas fa-envelope"></i>
         </a>
         <a href="https://medium.com/@uri.brodsky" target="_blank" title="Medium Blog">
           <i class="fab fa-medium-m"></i>
@@ -370,30 +372,6 @@
         I'm a dynamic leader with a proven track record of building high-performing teams, and I'm passionate about mentoring the next generation of managers and tech leads. 
         I blend deep technical expertise with a people-first mindset—and yes, I never miss an opportunity to drop a well-timed dad joke.
     </p>
-  </section>
-  
-  <!-- Blog Posts Section -->
-  <section id="blog">
-    <h2>Latest Articles</h2>
-    <div class="post-grid">
-      <article class="blog-post">
-        <img src="./images/agile_teams.webp" alt="Blog Post" class="blog-post-image">
-        <div class="blog-post-content">
-          <h3 class="blog-post-title">How to Build a Truly Agile Team</h3>
-          <p class="blog-post-excerpt">Building a high-performing agile team: Strategies and best practices.</p>
-          <a href="https://medium.com/riskified-technology/how-to-build-a-truly-agile-team-4f5aeda0fc91" class="read-more" target="_blank">Read on Medium</a>
-        </div>
-      </article>
-      <article class="blog-post">
-        <img src="./images/airflow_datbricks.webp" alt="Blog Post" class="blog-post-image">
-        <div class="blog-post-content">
-          <h3 class="blog-post-title">How We Enabled Dev and Data Science Independence</h3>
-          <p class="blog-post-excerpt">Learn how to leverage Airflow and Databricks to enable both teams to run independently while providing an end-to-end solution.</p>
-          <a href="https://medium.com/riskified-technology/how-to-build-a-truly-agile-team-4f5aeda0fc91" class="read-more" target="_blank">Read on Medium</a>
-        </div>
-      </article>
-      <!-- Add more blog posts similarly -->
-    </div>
   </section>
   
   <!-- Mentoring / Booking Section -->
@@ -429,6 +407,30 @@
     </div>
   </section>
   
+  <!-- Blog Posts Section -->
+  <section id="blog">
+    <h2>Latest Articles</h2>
+    <div class="post-grid">
+      <article class="blog-post">
+        <img src="./images/agile_teams.webp" alt="Blog Post" class="blog-post-image">
+        <div class="blog-post-content">
+          <h3 class="blog-post-title">How to Build a Truly Agile Team</h3>
+          <p class="blog-post-excerpt">Building a high-performing agile team: Strategies and best practices.</p>
+          <a href="https://medium.com/riskified-technology/how-to-build-a-truly-agile-team-4f5aeda0fc91" class="read-more" target="_blank">Read on Medium</a>
+        </div>
+      </article>
+      <article class="blog-post">
+        <img src="./images/airflow_datbricks.webp" alt="Blog Post" class="blog-post-image">
+        <div class="blog-post-content">
+          <h3 class="blog-post-title">How We Enabled Dev and Data Science Independence</h3>
+          <p class="blog-post-excerpt">Learn how to leverage Airflow and Databricks to enable both teams to run independently while providing an end-to-end solution.</p>
+          <a href="https://medium.com/riskified-technology/how-to-build-a-truly-agile-team-4f5aeda0fc91" class="read-more" target="_blank">Read on Medium</a>
+        </div>
+      </article>
+      <!-- Add more blog posts similarly -->
+    </div>
+  </section>
+  
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Uri Brodsky. All Rights Reserved.</p>
@@ -436,17 +438,10 @@
 
   <script>
     function openCalendar() {
-      const calendarUrl = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3tXuue5jfXtlz4gHOwuthbnHTI5tm9sAIaORB5leSoJS4Zz_FH3pwQeW1ovFA665fS7iJ403bc?gv=true';
-      const width = 600;
-      const height = 700;
-      const left = (screen.width - width) / 2;
-      const top = (screen.height - height) / 2;
-      
-      window.open(
-        calendarUrl,
-        'BookingCalendar',
-        `width=${width},height=${height},left=${left},top=${top},location=no,menubar=no,toolbar=no,status=no`
-      );
+      const calendlyUrl = 'https://calendly.com/uri-brodsky';
+      Calendly.initPopupWidget({
+        url: calendlyUrl
+      });
     }
   </script>
 </body>
